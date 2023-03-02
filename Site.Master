@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Omkar_Computers1.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 960px;
+            height: 306px;
+        }
+        .style3
+        {
+            width: 239px;
+            text-align: center;
+        }
+        .style9
+        {
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            color: White;
+            margin-left: 80px;
+        }
+        .style10
+        {
+            font-size: medium;
+        }
+        .newStyle1
+        {
+            font-family: "Times New Roman", Times, serif;
+        }
+        .style20
+        {
+            font-family: "Times New Roman", Times, serif;
+            text-decoration: blink;
+        }
+        .style38
+        {
+            width: 239px;
+            text-align: center;
+            height: 34px;
+        }
+        .style39
+        {
+            width: 240px;
+            text-align: center;
+            height: 34px;
+        }
+        .style41
+        {
+            color: #4e5766;
+            padding: 8px 0px 0px 0px;
+            margin: 0px auto;
+            text-align: left;
+            line-height: normal;
+            width: 895px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+
+        <div class="header">
+            <div class="title">
+                <h1 class="style20">
+                    Omkar Computer&#39;s &amp; Accesories
+                </h1>
+            </div>
+            <div class="style9">
+                <strong>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" BorderStyle="Solid" 
+                    BorderWidth="1px" NavigateUrl="~/login.aspx" BackColor="#0099FF" 
+                    BorderColor="Black" Height="30px" Width="100px" CssClass="login" 
+                    ForeColor="Black" 
+                    style="font-size: large; font-family: 'Times New Roman', Times, serif">Log-In</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;
+                </strong>
+            </div>
+            <div class="clear hideSkiplink" style="height: 86px">
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#00CCFF" 
+                    BorderStyle="Solid" BorderWidth="1px" ForeColor="Black" Height="40px" 
+                    Width="120px" style="text-align: center" CssClass="style10" 
+                    NavigateUrl="~/home.aspx">Home </asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#00CCFF" 
+                    BorderStyle="Solid" BorderWidth="1px" ForeColor="Black" Height="40px" 
+                    Width="117px" style="text-align: center" CssClass="style10" 
+                    NavigateUrl="~/About_us.aspx">About us </asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink32" runat="server" BackColor="#00CCFF" 
+                    BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" 
+                    ForeColor="Black" Height="40px" Width="130px" style="text-align: center" 
+                    CssClass="style10" NavigateUrl="~/PC part.aspx">PC parts</asp:HyperLink>
+                &nbsp;
+                &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink31" runat="server" BackColor="#00CCFF" 
+                    BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" 
+                    ForeColor="Black" Height="40px" Width="119px" style="text-align: center" 
+                    CssClass="style10" NavigateUrl="~/Hardware.aspx">Hardware</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink30" runat="server" BackColor="#00CCFF" 
+                    BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" 
+                    ForeColor="Black" Height="40px" Width="113px" style="text-align: center" 
+                    CssClass="style10" NavigateUrl="~/Accesories.aspx">Accesories</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink28" runat="server" BackColor="#00CCFF" 
+                    BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ForeColor="Black" 
+                    Height="40px" Width="108px" style="text-align: center" CssClass="style10" 
+                    NavigateUrl="~/Systems.aspx">Systems</asp:HyperLink>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+        
+        <table class="style1">
+            <tr>
+                 <td class="style38">
+                     <asp:HyperLink ID="HyperLink33" runat="server" NavigateUrl="~/PC part.aspx">PC Parts</asp:HyperLink>
+                 </td>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink35" runat="server" NavigateUrl="~/Hardware.aspx">Hardware</asp:HyperLink>
+                 </td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink36" runat="server" NavigateUrl="~/Accesories.aspx">Accesories</asp:HyperLink>
+                 </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink34" runat="server" NavigateUrl="~/RAMs page.aspx">RAM&#39;s</asp:HyperLink>
+                </td>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/moniter.aspx">Moniters</asp:HyperLink>
+                </td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink27" runat="server">Chargers</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/cpu.aspx">CPU</asp:HyperLink>
+                </td>
+                <td class="style38">
+                    Power Adaptors</td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink23" runat="server">Cables</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink6" runat="server">Cooling</asp:HyperLink>
+                </td>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink38" runat="server" NavigateUrl="~/Keyboards.aspx">Keyboards</asp:HyperLink>
+                </td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink24" runat="server">Adaptors</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink7" runat="server">Hard Drives</asp:HyperLink>
+                </td>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink39" runat="server" NavigateUrl="~/mouse.aspx">Mouse</asp:HyperLink>
+                </td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/SMPS.aspx">SMPS</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink8" runat="server" 
+                        NavigateUrl="~/Graphics cards.aspx">Graphics Cards</asp:HyperLink>
+                </td>
+                <td class="style3">
+                    LAPTOP BATTERY</td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink26" runat="server">Power Cables</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style38">
+                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/motherb.aspx">Motherboards</asp:HyperLink>
+                </td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style39">
+                    <asp:HyperLink ID="HyperLink4" runat="server">HDD Cases</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+        
+    </div>
+    <div class="style41">
+        
+    </div>
+    </form>
+</body>
+</html>
